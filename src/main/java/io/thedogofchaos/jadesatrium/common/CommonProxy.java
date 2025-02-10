@@ -1,8 +1,8 @@
 package io.thedogofchaos.jadesatrium.common;
 
+import com.tterrag.registrate.Registrate;
 import io.thedogofchaos.jadesatrium.JadesAtrium;
-import io.thedogofchaos.skaialib.registrate.SkaiaRegistrate;
 
 public class CommonProxy {
-    public static final SkaiaRegistrate REGISTRATE = new SkaiaRegistrate()
+    public static final Registrate REGISTRATE = Registrate.create(JadesAtrium.MOD_ID);
 }
