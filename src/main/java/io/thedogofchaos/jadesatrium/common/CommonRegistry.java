@@ -1,6 +1,11 @@
 package io.thedogofchaos.jadesatrium.common;
 
+import io.thedogofchaos.jadesatrium.common.data.ModBlocks;
+import io.thedogofchaos.jadesatrium.common.data.ModCreativeTabs;
+import io.thedogofchaos.jadesatrium.common.data.ModItems;
+import io.thedogofchaos.jadesatrium.common.data.ModPlants;
 import io.thedogofchaos.jadesatrium.common.registry.CropRegistry;
+
 import net.minecraftforge.eventbus.api.IEventBus;
 
 public class CommonRegistry {

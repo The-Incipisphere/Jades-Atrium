@@ -1,7 +1,18 @@
 package io.thedogofchaos.jadesatrium.common.registry;
 
 import com.tterrag.registrate.providers.RegistrateLangProvider;
+import com.tterrag.registrate.util.entry.BlockEntry;
+import com.tterrag.registrate.util.entry.ItemEntry;
+import com.tterrag.registrate.util.entry.RegistryEntry;
 
+import io.thedogofchaos.jadesatrium.block.OreCropBlock;
+import io.thedogofchaos.jadesatrium.exceptions.DuplicateRegistryEntryException;
+import io.thedogofchaos.jadesatrium.exceptions.FrozenRegistryException;
+import io.thedogofchaos.jadesatrium.item.OreHarvestedItem;
+import io.thedogofchaos.jadesatrium.item.OreSeedItem;
+
+import io.thedogofchaos.jadesatrium.organic.Crop;
+import io.thedogofchaos.jadesatrium.util.BlockStateUtils;
 import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
@@ -18,15 +29,18 @@ import lombok.Setter;
 
 import java.util.HashMap;
 import java.util.LinkedHashMap;
+import java.util.Map;
 import java.util.Objects;
 
 import static io.thedogofchaos.jadesatrium.JadesAtrium.MOD_ID;
 import static io.thedogofchaos.jadesatrium.common.CommonProxy.REGISTRATE;
+import static io.thedogofchaos.jadesatrium.common.data.ModCreativeTabs.CROP_HARVESTED_TAB;
+import static io.thedogofchaos.jadesatrium.common.data.ModCreativeTabs.CROP_SEEDS_TAB;
 
 /*
  * Based on BlakeBr0's crop registry system for Mystical Agriculture
  */
-public class CropRegistry implements ICropRegistry {
+public class CropRegistry {
     private static final CropRegistry INSTANCE = new CropRegistry();
     private final Map<String, RegistryEntry<OreCropBlock>> CROP_BLOCKS = new HashMap<>();
     private final Map<String, RegistryEntry<OreHarvestedItem>> CROP_HARVESTED_ITEMS = new HashMap<>();
@@ -154,12 +168,10 @@ public class CropRegistry implements ICropRegistry {
         return list;
     }
 
-    @Override
     public Crop getCropById(ResourceLocation id) {
         return this.CROPS.get(id);
     }
 
-    @Override
     public Crop getCropByName(String name) {
         return this.CROPS.values().stream().filter(
                 c -> name.equals(

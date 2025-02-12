@@ -1,6 +1,8 @@
 package io.thedogofchaos.jadesatrium;
 
+import com.google.common.base.CaseFormat;
 import com.mojang.logging.LogUtils;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.fml.DistExecutor;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.loading.FMLEnvironment;
@@ -24,5 +26,9 @@ public class JadesAtrium {
 
     public static void init() {
         LOGGER.info("We're loading {} on the {}", MOD_NAME, FMLEnvironment.dist);
+    }
+
+    public static ResourceLocation id(String path) {
+        return new ResourceLocation(MOD_ID, CaseFormat.UPPER_CAMEL.to(CaseFormat.LOWER_UNDERSCORE, path));
     }
 }
