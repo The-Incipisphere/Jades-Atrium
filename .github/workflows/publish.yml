@@ -99,7 +99,7 @@ jobs:
       - name: Publish Mod
         uses: Kir-Antipov/mc-publish@v3.3.0
         with:
-          curseforge-id: 1195781
+          curseforge-id: 1199049
           curseforge-token: ${{ secrets.CURSEFORGE_TOKEN }}
           files: |
             ./${{ needs.build.outputs.mod_id }}-${{ needs.build.outputs.mod_ver }}.jar
