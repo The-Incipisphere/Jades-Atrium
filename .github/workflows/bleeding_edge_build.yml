@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       GITHUB_TOKEN: ${{ github.token }}
-      SNAPSHOT: true
+      BLEEDING-EDGE: true
       CI: true
     permissions:
       contents: write
