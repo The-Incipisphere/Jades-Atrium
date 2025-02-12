@@ -14,7 +14,7 @@ tasks.named('wrapper', Wrapper).configure {
     distributionType = Wrapper.DistributionType.BIN
 }
 
-boolean isBleedingEdge = System.getenv("BLEEDING-EDGE")
+boolean isBleedingEdge = System.getenv("BLEEDING_EDGE")
 version = "${mod_version}" + (isBleedingEdge ? "-BLEEDINGEDGE" : "")
 // boolean isCI = System.getenv("CI") != null
 group = mod_group_id
