@@ -13,7 +13,7 @@
     </i>
 </p> 
 <p align="center">
-    <b>The agricultural module of my (upcoming) Incipisphere Suite. Can be run standalone, but will function best when the whole suite is installed.</b>
+    <b>The agricultural module of my (upcoming) suite of mods: <a href="https://github.com/topics/the-medium-suite">The Medium Suite</a>. Can be run standalone, but will function best when the whole suite is installed.</b>
 </p>
 <h1 align="center">
     <a href="https://www.curseforge.com/minecraft/mc-mods/jades-atrium">
@@ -26,7 +26,7 @@
     </a>
     <br>
     <a href="https://www.curseforge.com/minecraft/mc-mods/jades-atrium">
-        <img src="https://cf.way2muchnoise.eu/1195781.svg?badge_style=for_the_badge" alt="CurseForge Download Count">
+        <img src="https://cf.way2muchnoise.eu/1199049.svg?badge_style=for_the_badge" alt="CurseForge Download Count">
     </a>
     <a href="https://github.com/The-Incipisphere/Jades-Atrium/releases">
         <img src="https://img.shields.io/github/downloads/The-Incipisphere/Jades-Atrium/total?sort=semver&logo=github&label=&style=for-the-badge&color=2d2d2d&labelColor=545454&logoColor=FFFFFF" alt="GitHub Download Count">
