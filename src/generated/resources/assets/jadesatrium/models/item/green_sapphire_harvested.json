@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "jadesatrium:block/plant_assets/crop/1_tall/debug/age7/flower",
+    "layer1": "jadesatrium:block/plant_assets/crop/1_tall/debug/age7/pistil",
+    "layer2": "jadesatrium:block/plant_assets/crop/1_tall/debug/age7/stem"
+  }
+}

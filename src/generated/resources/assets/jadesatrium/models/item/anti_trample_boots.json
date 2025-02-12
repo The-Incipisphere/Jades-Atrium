@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "jadesatrium:item/anti_trample_boots"
+  }
+}

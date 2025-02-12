@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "jadesatrium:block/apatite_crop_age0"
+    },
+    "age=1": {
+      "model": "jadesatrium:block/apatite_crop_age1"
+    },
+    "age=2": {
+      "model": "jadesatrium:block/apatite_crop_age2"
+    },
+    "age=3": {
+      "model": "jadesatrium:block/apatite_crop_age3"
+    },
+    "age=4": {
+      "model": "jadesatrium:block/apatite_crop_age4"
+    },
+    "age=5": {
+      "model": "jadesatrium:block/apatite_crop_age5"
+    },
+    "age=6": {
+      "model": "jadesatrium:block/apatite_crop_age6"
+    },
+    "age=7": {
+      "model": "jadesatrium:block/apatite_crop_age7"
+    }
+  }
+}

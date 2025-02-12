@@ -1,0 +1,8 @@
+{
+  "parent": "jadesatrium:block/plant_assets/flower_crop_cross",
+  "textures": {
+    "flower": "jadesatrium:block/plant_assets/crop/1_tall/debug/age0/flower",
+    "pistil": "jadesatrium:block/plant_assets/crop/1_tall/debug/age0/pistil",
+    "stem": "jadesatrium:block/plant_assets/crop/1_tall/debug/age0/stem"
+  }
+}
