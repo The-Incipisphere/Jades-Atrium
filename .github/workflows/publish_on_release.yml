@@ -34,6 +34,8 @@ jobs:
     needs: [ meta ]
     secrets: inherit
     uses: ./.github/workflows/publish.yml
+    permissions:
+      contents: write
     with:
       simulate: ${{ startsWith(github.event.release.name, 'simulate') || github.repository_owner != 'The-Incipisphere' }}
       tag-name: "${{ github.ref_name }}"
