@@ -198,6 +198,9 @@ dependencies {
     // Lombok
     compileOnly 'org.projectlombok:lombok:1.18.36'
     annotationProcessor 'org.projectlombok:lombok:1.18.36'
+
+    // Jetbrains Annotations
+    compileOnly 'org.jetbrains:annotations:26.0.2'
 }
 
 // Uncomment the lines below if you wish to configure mixin. The mixin file should be named modid.mixins.json.
