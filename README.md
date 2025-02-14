@@ -15,7 +15,8 @@
 <p align="center">
     <b>The agricultural module of my (upcoming) suite of mods: <a href="https://github.com/topics/the-medium-suite">The Medium Suite</a>. Can be run standalone, but will function best when the whole suite is installed.</b>
 </p>
-<h1 align="center">
+<hr>
+<p align="center">
     <a href="https://www.curseforge.com/minecraft/mc-mods/jades-atrium">
         <img src="https://img.shields.io/badge/Available%20for-MC%201.20.1%20-informational?style=for-the-badge" alt="Supported Versions">
     </a>
@@ -24,11 +25,52 @@
     <a href="https://github.com/The-Incipisphere/Jades-Atrium/releases">
         <img src="https://img.shields.io/github/v/release/The-Incipisphere/Jades-Atrium?sort=semver&display_name=release&style=for-the-badge&label=Latest%20Version" alt="Latest Version" >
     </a>
-    <br>
+</p>
+<p align="center">
     <a href="https://www.curseforge.com/minecraft/mc-mods/jades-atrium">
         <img src="https://cf.way2muchnoise.eu/1199049.svg?badge_style=for_the_badge" alt="CurseForge Download Count">
     </a>
     <a href="https://github.com/The-Incipisphere/Jades-Atrium/releases">
         <img src="https://img.shields.io/github/downloads/The-Incipisphere/Jades-Atrium/total?sort=semver&logo=github&label=&style=for-the-badge&color=2d2d2d&labelColor=545454&logoColor=FFFFFF" alt="GitHub Download Count">
     </a>
-</h1>
+</p>
+<hr>
+<h1>Current Features</h1>
+<p>
+    (Note: Everything listed here is
+    <strong>
+        SUBJECT TO CHANGE
+    </strong>,
+    see
+    <a href="https://github.com/The-Incipisphere/The-Incipisphere-Mod-Planning" target="_blank" rel="nofollow noopener">
+        The-Incipisphere/The-Incipisphere-Mod-Planning
+    </a>
+    for future plans)
+</p>
+<ul>
+    <li>
+        Statically-implemented Crops for a lot of materials/elements.
+        <ul>
+            <li>
+                <img src="https://media.forgecdn.net/attachments/description/1199049/description_5b3d03f4-9119-4255-a18c-29372fcc7aab.PNG" alt="" width="248" height="610">
+            </li>
+            <li style="font-weight: bold;">
+                <strong>
+                    Each of these crops always drop 1 seed, no matter if they're fully grown or not.
+                </strong>
+            </li>
+            <li>
+                I will note, that all the crops have dev textures at the moment. This may hopefully change in future.
+            </li>
+            <li>
+                Also, by 'statically', I mean that all the crops are pre-defined. This will change in future, to allow for use with KubeJS and/or datapacks.
+            </li>
+        </ul>
+    </li>
+    <li>
+        Anti-Trample Boots, that, while worn, do not allow you to trample farmland.
+    </li>
+</ul>
+<p>
+    That's it (so far).
+</p>
