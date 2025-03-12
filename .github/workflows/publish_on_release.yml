@@ -25,7 +25,7 @@ jobs:
         uses: mikepenz/release-changelog-builder-action@v5
         with:
           mode: "COMMIT"
-          configuration: './.github/json/config_stable.json'
+          configuration: './.github/json/config-stable.json'
           ignorePreReleases: true
           fetchViaCommits: true
           failOnError: true
