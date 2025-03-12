@@ -126,6 +126,8 @@ jobs:
         with:
           ref: 'main'
       - name: Bump Version
+        # FIXME: Incorrectly targets other mod version values in gradle.properties.
+        # May have to move dependency versions to a seperate .properties file.
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
@@ -143,4 +145,4 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           git push --force --set-upstream origin gh/release-main
-          gh pr create -B main -H gh/release-main --title "RELEASE for 1.20.1" --body "Created by GH Workflow" --label "ignore changelog"
+          gh pr create -B main -H gh/release-main --title "Version bump & Changelog update" --body "This PR was generated automatically by [publish.yml](https://github.com/The-Incipisphere/Becs-Mod-Template/blob/main/.github/workflows/publish.yml) upon " --label "ignore changelog"

@@ -15,7 +15,7 @@
   ],
   "sort": "ASC",
   "template": "## Version [v#{{VERSION}}](#{{RELEASE_DIFF}})\n#{{CHANGELOG}} ",
-  "pr_template": "- #{{TITLE}} by @#{{AUTHOR}} in [##{{NUMBER}}](#{{URL}})",
+  "commit_template": "- #{{TITLE}} [@#{{AUTHOR}} in #{{MERGE_SHA}}]",
   "custom_placeholders": [
     {
       "name": "VERSION",
@@ -26,7 +26,7 @@
       }
     }
   ],
-  "empty_template": "",
+  "empty_template": "# Graft changelog to yourself so that you have one hideous release message\n![What Changelog?](https://github.com/user-attachments/assets/f80c9175-4052-45d3-8eda-635187027819)\nWhat changelog?",
   "ignore_labels": ["ignore changelog"],
   "tag_resolver": {
     "method": "semver",

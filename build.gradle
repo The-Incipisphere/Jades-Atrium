@@ -162,9 +162,6 @@ obfuscation {
 }
 
 dependencies {
-    // SkaiaLib
-    modImplementation("curse.maven:skaialib-1195781:6169396")
-
     // JEI
     modCompileOnly("mezz.jei:jei-$project.minecraft_version-forge-api:$project.jei_version") { transitive = false }
     modCompileOnly("mezz.jei:jei-$project.minecraft_version-common-api:$project.jei_version") { transitive = false }

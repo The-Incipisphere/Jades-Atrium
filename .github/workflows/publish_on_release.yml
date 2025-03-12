@@ -24,7 +24,8 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
         uses: mikepenz/release-changelog-builder-action@v5
         with:
-          configuration: './.github/json/config-stable.json'
+          mode: "COMMIT"
+          configuration: './.github/json/config_stable.json'
           ignorePreReleases: true
           fetchViaCommits: true
           failOnError: true
@@ -34,11 +35,9 @@ jobs:
     needs: [ meta ]
     secrets: inherit
     uses: ./.github/workflows/publish.yml
-    permissions:
-      contents: write
     with:
       simulate: ${{ startsWith(github.event.release.name, 'simulate') || github.repository_owner != 'The-Incipisphere' }}
-      tag-name: "${{ github.ref_name }}"
-      curseforge-release-type: "${{contains(github.event.release.name, 'alpha') && 'alpha' || (contains(github.event.release.name, 'beta') && 'beta' || 'release')}}"
-      release-body: "${{ github.event.release.body }}"
-      changelog-body: "${{ needs.meta.outputs.CHANGELOG }}"
+      tag-name: ${{ github.ref_name }}
+      curseforge-release-type: ${{ (contains(github.event.release.name, "alpha") && "alpha") || (contains(github.event.release.name, "beta") && "beta") || (contains(github.event.release.name, "release") && "release")}}
+      release-body: ${{ github.event.release.body }}
+      changelog-body: ${{ needs.meta.outputs.CHANGELOG }}

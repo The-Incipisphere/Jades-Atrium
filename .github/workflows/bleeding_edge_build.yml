@@ -56,7 +56,7 @@ jobs:
         id: changelog
         uses: mikepenz/release-changelog-builder-action@v5
         with:
-          mode: "HYBRID"
+          mode: "COMMIT"
           configuration: ./.github/json/config-bleedingedge.json
           fromTag: bleeding-edge
           toTag: refs/heads/main
